@@ -1,0 +1,20 @@
+header ul li{
+    list-style: none;
+}
+
+header ul li:nth-child(1) img {
+    width: 60%;
+}
+
+header ul li a{
+    color: #00913e !important;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    header ul li:nth-child(1) img {
+        max-width: 100% !important;
+    }
+}
+
+
