@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>COONATRA MONITOREO</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
       rel="stylesheet"
@@ -14,12 +14,19 @@
   <body>
     <div class="container">
       <div class="img">
-        <img src="img/coonatralogo.jpeg" />
+        <img src="../img/coonatralogo.jpeg" />
       </div>
       <div class="login-content">
-        <form action="" method="POST">          
+        <form action="../index.php" method="POST">        
+            <?php
+            
+                if (isset($errorLogin)) {
+                    echo $errorLogin;
+                }
+            
+            ?>  
           <div>
-            <img src="img/usuario.svg" />
+            <img src="../img/usuario.svg" />
             <h2 class="title">BIENVENIDO</h2>
             <div class="input-div one">
               <div class="i">
@@ -45,6 +52,6 @@
         </form>
       </div>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
   </body>
 </html>
